@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gregs List</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="app/style.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <h1 class="col-12 text-center">Enter Car Info</h1>
+      <form onsubmit="app.controllers.carController.addCar(event)" class="col-5">
+        <div class="form-group">
+          <label for="make">Make</label>
+          <input type="text" class="form-control" name="make" id="make" required placeholder="Make">
+        </div>
+        <div class="form-group">
+          <label for="model">Model</label>
+          <input type="text" class="form-control" name="model" id="model" required placeholder="Model">
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" min="1900" max="2021" class="form-control" name="year" id="year" required
+            placeholder="Pick a year">
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" required placeholder="Type in an image Url">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description" required
+            placeholder="Description">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="text" class="form-control" name="price" id="price" required placeholder="Price?">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+    </div>
+    </form>
+
+    <div id="cars" class="row">
+
+    </div>
+    <div class="row justify-content-center">
+      <h1 class="col-12 text-center">Enter House info</h1>
+      <form onsubmit="app.controllers.houseController.addHouse(event)" class="col-5">
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description" required
+            placeholder="description">
+        </div>
+        <div class="form-group">
+          <label for="squareFeet">Square Feet</label>
+          <input type="number" class="form-control" name="squareFeet" id="squareFeet" required
+            placeholder="Square Feet">
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" name="address" id="address" required placeholder="address">
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" required placeholder="Type in an image Url">
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" required placeholder="Price">
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">Bedrooms</label>
+          <input type="number" class="form-control" name="bedrooms" id="bedrooms" required placeholder="bedrooms">
+        </div>
+        <div class="form-group">
+          <label for="bathrooms">Bathrooms</label>
+          <input type="number" class="form-control" name="bathrooms" id="bathrooms" required placeholder="bathrooms">
+        </div>
+        <div class="form-group">
+          <label for="stories">Stories</label>
+          <input type="number" class="form-control" name="stories" id="stories" required placeholder="stories">
+        </div>
+        <div class="form-group">
+          <label for="yearBuilt">Year Built</label>
+          <input type="number" class="form-control" name="yearBuilt" id="yearBuilt" required placeholder="year built">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+
+    <div id="houses" class="row">
+    </div>
+    <div class="row justify-content-center">
+      <h1 class="col-12 text-center">Enter Job Info</h1>
+      <form onsubmit="app.controllers.jobController.addJob(event)" class="col-5">
+        <div class="form-group">
+          <label for="company">Company</label>
+          <input type="text" class="form-control" name="company" id="company" required placeholder="Enter Company Name">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description" required
+            placeholder="Enter Job Description">
+        </div>
+        <div class="form-group">
+          <label for="duties">Duties</label>
+          <input type="text" class="form-control" name="duties" id="duties" required placeholder="Enter Job Duties">
+        </div>
+        <div class="form-group">
+          <label for="pay">Pay</label>
+          <input type="number" class="form-control" name="pay" id="pay" required placeholder="Enter Pay /Hour">
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+      </form>
+    </div>
+    <div id="jobs" class="row">
+    </div>
+  </div>
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
