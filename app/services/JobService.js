@@ -2,10 +2,10 @@ import Job from "../models/Job.js";
 
 let _state = {
   jobs: [new Job({
-    company: "JJs",
-    description: "Delivery Driver",
-    duties: "Deliver Sandwiches",
-    pay: 9
+    company: "Example",
+    description: "Example",
+    duties: "Example",
+    pay: 7.5
   })]
 }
 

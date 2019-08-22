@@ -1,6 +1,5 @@
 export default class Car {
   constructor(data) {
-    this.id = data._id || Math.floor(Math.random() * 1000000)
     this.make = data.make
     this.model = data.model
     this.price = data.price
@@ -17,7 +16,6 @@ export default class Car {
   <h3>$${this.price}</h3>
   <p>Year: ${this.year}</p>
   <p>${this.description}</p>
-
   `
   }
 }
